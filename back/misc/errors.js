@@ -27,4 +27,12 @@ module.exports = {
         statusCode: 500,
         error: new Error('something went wrong!'),
     },
+    short_url: {
+        statusCode: 400,
+        error: new Error('the inserted URL must have at least 8 characters')
+    },
+    url_not_found: {
+        statusCode: 400,
+        error: new Error('the URL does not exist')
+    }
 }

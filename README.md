@@ -26,7 +26,7 @@ En la esquina superior derecha debería ver mi nombre de usuario junto a un icon
 
 Debemos tener un nuevo modelo, "Links", para guardar todas las URLs creadas y guardar también quién creó dicha URL y cuántas veces se usa cada una. Deberá tener los siguientes campos:
 - id (uuid v4, PK)
-- short_url (text, unique not null) (solo se guarda el path de la url. Sin dominio. Piensa cómo generar una parte aleatoria, ej: "/short/aJ34vG90"
+- short_url (text, unique not null) (solo se guarda el path de la url. Sin dominio. Piensa cómo generar una parte aleatoria, ej: "/short/aJ34vG90")
 - origin_url (text, not null) (URL original)
 - uses_by_creator (integer, default 0) (usos que ha hecho de esta url solo quien la crease)
 - uses (integer, default 0) (usos totales)
